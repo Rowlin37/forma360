@@ -1,0 +1,24 @@
+node_modules/
+.next/
+out/
+coverage/
+playwright-report/
+test-results/
+.vercel/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+
+# Entorno local / contenedores de desarrollo
+.cache/
+.config/
+.local/
+.npm/
+.bash_history
+.bash_logout
+.bashrc
+.profile
+.sudo_as_admin_successful

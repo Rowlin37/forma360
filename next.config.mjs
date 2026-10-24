@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
+  trailingSlash: true,
   allowedDevOrigins: ['*.e2b.app', 'localhost', '127.0.0.1'],
   async headers() {
     return [

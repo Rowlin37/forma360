@@ -431,13 +431,21 @@ export async function deleteAccountAndAllData(user: AuthSessionUser): Promise<{ 
   }
 
   if (user.mode === 'supabase') {
-    const res = await fetch('/api/account', { method: 'DELETE' });
-    if (!res.ok) {
-      const body = (await res.json().catch(() => ({}))) as { error?: string };
-      return { ok: false, error: body.error ?? 'Error al eliminar los datos en el servidor.' };
-    }
     const supabase = getSupabaseBrowserClient();
-    await supabase?.auth.signOut();
+    if (supabase) {
+      const { data: { user: authUser } } = await supabase.auth.getUser();
+      if (authUser) {
+        // Borrado relacional client-side respetando políticas RLS
+        const { error: delError } = await supabase
+          .from('profiles')
+          .delete()
+          .eq('user_id', authUser.id);
+        if (delError) {
+          return { ok: false, error: 'Error al eliminar los datos en el servidor.' };
+        }
+      }
+      await supabase.auth.signOut();
+    }
   }
 
   return { ok: true };

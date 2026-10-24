@@ -22,3 +22,29 @@ next-env.d.ts
 .bashrc
 .profile
 .sudo_as_admin_successful
+
+# Capacitor / Android
+android/
+.android/
+.gradle/
+*.keystore
+!debug.keystore
+*.apk
+*.idsig
+
+# Build tools locales
+jdk17/
+jdk21/
+android-sdk/
+
+# Supabase CLI local
+.supabase/
+supabase/.temp/
+
+# Other
+image-search/
+uploads/
+deploy/
+.wget-hsts
+.git-credentials
+.gitconfig

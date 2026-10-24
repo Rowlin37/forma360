@@ -352,7 +352,7 @@ export function ExercisesSection() {
               {isOpen && (
                 <>
                   {ex.demoImageUrl && (
-                    <img src={ex.demoImageUrl} alt={ex.name} className="w-full h-44 object-cover rounded-xl border border-slate-200 dark:border-slate-700" />
+                    <img src={ex.demoImageUrl} alt={ex.name} className="w-full max-h-96 object-contain rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950" />
                   )}
                   <div className="pt-3 border-t border-slate-100 dark:border-slate-800 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
                   <div className="space-y-2">

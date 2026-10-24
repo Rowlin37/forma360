@@ -350,7 +350,11 @@ export function ExercisesSection() {
               </button>
 
               {isOpen && (
-                <div className="pt-3 border-t border-slate-100 dark:border-slate-800 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                <>
+                  {ex.demoImageUrl && (
+                    <img src={ex.demoImageUrl} alt={ex.name} className="w-full h-44 object-cover rounded-xl border border-slate-200 dark:border-slate-700" />
+                  )}
+                  <div className="pt-3 border-t border-slate-100 dark:border-slate-800 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
                   <div className="space-y-2">
                     <p className="font-bold text-slate-900 dark:text-white">
                       Instrucciones paso a paso:
@@ -406,6 +410,7 @@ export function ExercisesSection() {
                     </div>
                   </div>
                 </div>
+                </>
               )}
             </div>
           );

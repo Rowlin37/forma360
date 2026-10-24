@@ -18,7 +18,6 @@ export function ProfileSection() {
   const {
     user,
     state,
-    isSupabaseCloud,
     updateProfile,
     updatePreferences,
     saveSafetyScreening,
@@ -471,26 +470,11 @@ export function ProfileSection() {
         </button>
       </form>
 
-      {/* 3. INFRAESTRUCTURA SUPABASE, EXPORTACIÓN Y BORRADO SEGURO DE CUENTA */}
+      {/* 3. EXPORTACIÓN Y BORRADO SEGURO DE CUENTA */}
       <div className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 space-y-4 text-xs">
         <h2 className="text-base font-bold text-slate-900 dark:text-white">
-          3. Estado de Persistencia, Copias de Seguridad y Privacidad
+          3. Copias de Seguridad y Borrado de Cuenta
         </h2>
-
-        <div className="rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 p-4 space-y-2">
-          <p className="font-bold text-slate-900 dark:text-white">
-            Estado actual:{' '}
-            {isSupabaseCloud
-              ? 'Conectado a PostgreSQL en Supabase (RLS activo)'
-              : 'Almacenamiento Local Explícito (Supabase pendiente de variables de entorno)'}
-          </p>
-          <p className="text-slate-600 dark:text-slate-400">
-            Para activar la sincronización entre móvil y ordenador: ejecuta en el SQL Editor de Supabase los archivos{' '}
-            <code>supabase/migrations/202610220001_forma360_schema.sql</code> y{' '}
-            <code>202610220002_forma360_seed.sql</code>, y añade{' '}
-            <code>NEXT_PUBLIC_SUPABASE_URL</code> y <code>NEXT_PUBLIC_SUPABASE_ANON_KEY</code> en Vercel. Ningún dato de salud se envía a APIs externas de IA.
-          </p>
-        </div>
 
         <div className="flex flex-wrap items-center gap-3">
           <button

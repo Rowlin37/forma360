@@ -1,12 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Activity, AlertCircle, CheckCircle2, ShieldCheck, UserPlus, LogIn } from 'lucide-react';
+import { Activity, AlertCircle, CheckCircle2, UserPlus, LogIn } from 'lucide-react';
 import { useForma360 } from '@/context/Forma360Context';
 import { authCredentialsSchema } from '@/lib/types';
 
 export function AuthGate() {
-  const { login, register, openDemoProfile, isSupabaseCloud } = useForma360();
+  const { login, register } = useForma360();
   const [mode, setMode] = useState<'login' | 'register'>('register');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -70,25 +70,6 @@ export function AuthGate() {
           <p className="text-sm text-slate-600 dark:text-slate-400">
             Transformación física sostenible · Fuerza · Nutrición · Rumbo a Media Maratón
           </p>
-        </div>
-
-        {/* Estado honesto de persistencia */}
-        <div
-          className={`rounded-xl border p-3.5 text-xs leading-relaxed ${
-            isSupabaseCloud
-              ? 'border-emerald-500/30 bg-emerald-500/10 text-emerald-900 dark:text-emerald-200'
-              : 'border-amber-500/40 bg-amber-500/10 text-amber-950 dark:text-amber-200'
-          }`}
-        >
-          <div className="font-semibold flex items-center gap-1.5 mb-1">
-            <ShieldCheck className="w-4 h-4 shrink-0" />
-            {isSupabaseCloud
-              ? 'Persistencia en nube Supabase activa (RLS habilitado)'
-              : 'Modo Local Persistente (Supabase pendiente de configurar)'}
-          </div>
-          {isSupabaseCloud
-            ? 'Tus datos se guardan cifrados en tu base PostgreSQL de Supabase asociados únicamente a tu usuario.'
-            : 'Las variables NEXT_PUBLIC_SUPABASE_URL y NEXT_PUBLIC_SUPABASE_ANON_KEY aún no están definidas. Las cuentas que registres aquí guardan datos reales en este navegador aislados por usuario con contraseña cifrada (SHA-256).'}
         </div>
 
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm p-6 space-y-5">
@@ -216,18 +197,6 @@ export function AuthGate() {
               )}
             </button>
           </form>
-
-          {!isSupabaseCloud && (
-            <div className="pt-3 border-t border-slate-200 dark:border-slate-800">
-              <button
-                type="button"
-                onClick={openDemoProfile}
-                className="w-full py-2.5 px-3 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-medium text-slate-700 dark:text-slate-300 transition"
-              >
-                Abrir directamente Perfil Inicial Precargado (35 años · 90 kg · Fútbol Mié/Dom)
-              </button>
-            </div>
-          )}
         </div>
       </div>
     </div>

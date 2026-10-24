@@ -11,6 +11,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-bench-barbell',
     slug: 'bench-press-barbell',
+    demoImageUrl: '/exercises/bench-press-barbell.jpg',
     name: 'Press de banca con barra recta',
     category: 'strength',
     primaryMuscle: 'Pectoral mayor',
@@ -61,6 +62,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-bench-dumbbell',
     slug: 'dumbbell-bench-press',
+    demoImageUrl: '/exercises/dumbbell-bench-press.jpg',
     name: 'Press de banca con mancuernas',
     category: 'strength',
     primaryMuscle: 'Pectoral mayor',
@@ -98,6 +100,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-incline-db-press',
     slug: 'incline-dumbbell-press',
+    demoImageUrl: '/exercises/incline-dumbbell-press.jpg',
     name: 'Press inclinado con mancuernas (30°)',
     category: 'strength',
     primaryMuscle: 'Pectoral clavicular (superior)',
@@ -135,6 +138,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-floor-press',
     slug: 'floor-dumbbell-press',
+    demoImageUrl: '/exercises/floor-dumbbell-press.jpg',
     name: 'Press de pecho en suelo con mancuernas',
     category: 'strength',
     primaryMuscle: 'Pectoral mayor y tríceps',
@@ -165,6 +169,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-pushup',
     slug: 'pushup-incline-controlled',
+    demoImageUrl: '/exercises/pushup-incline-controlled.webp',
     name: 'Flexiones controladas (suelo o manos en banco)',
     category: 'strength',
     primaryMuscle: 'Pectoral mayor',
@@ -198,6 +203,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-overhead-db',
     slug: 'dumbbell-overhead-press',
+    demoImageUrl: '/exercises/dumbbell-overhead-press.jpg',
     name: 'Press militar de pie o sentado con mancuernas',
     category: 'strength',
     primaryMuscle: 'Deltoides anterior y lateral',
@@ -235,6 +241,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-overhead-barbell',
     slug: 'barbell-overhead-press',
+    demoImageUrl: '/exercises/barbell-overhead-press.jpg',
     name: 'Press militar de pie con barra recta',
     category: 'strength',
     primaryMuscle: 'Deltoides',
@@ -265,6 +272,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-pike-pushup',
     slug: 'pike-shoulder-press',
+    demoImageUrl: '/exercises/pike-shoulder-press.png',
     name: 'Empuje vertical en V invertida (Pike Push-up adaptado)',
     category: 'strength',
     primaryMuscle: 'Deltoides anterior',
@@ -297,6 +305,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-db-row',
     slug: 'one-arm-dumbbell-row',
+    demoImageUrl: '/exercises/one-arm-dumbbell-row.jpg',
     name: 'Remo unilateral con mancuerna apoyado en banco',
     category: 'strength',
     primaryMuscle: 'Dorsal ancho',
@@ -334,6 +343,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-bb-row',
     slug: 'bent-over-barbell-row',
+    demoImageUrl: '/exercises/bent-over-barbell-row.jpg',
     name: 'Remo inclinado con barra recta o EZ',
     category: 'strength',
     primaryMuscle: 'Dorsal ancho y espalda media',
@@ -365,6 +375,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-inverted-body-row',
     slug: 'prone-towel-pull',
+    demoImageUrl: '/exercises/prone-towel-pull.png',
     name: 'Tracción escapular prono en suelo (Y-T-W / Toalla)',
     category: 'strength',
     primaryMuscle: 'Trapecio medio-inferior y romboides',
@@ -395,6 +406,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-pullup',
     slug: 'pull-up-bar-vertical',
+    demoImageUrl: '/exercises/pull-up-bar-vertical.png',
     name: 'Dominadas pronas o supinas (asistidas o libres)',
     category: 'strength',
     primaryMuscle: 'Dorsal ancho',
@@ -432,6 +444,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-lat-pulldown',
     slug: 'cable-lat-pulldown',
+    demoImageUrl: '/exercises/cable-lat-pulldown.webp',
     name: 'Jalón al pecho en polea alta',
     category: 'strength',
     primaryMuscle: 'Dorsal ancho',
@@ -462,6 +475,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-db-pullover',
     slug: 'dumbbell-pullover-lat',
+    demoImageUrl: '/exercises/dumbbell-pullover-lat.webp',
     name: 'Pull-over controlado en banco con mancuerna o barra EZ',
     category: 'strength',
     primaryMuscle: 'Dorsal ancho y serrato anterior',
@@ -495,6 +509,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-goblet-squat',
     slug: 'goblet-squat',
+    demoImageUrl: '/exercises/goblet-squat.jpg',
     name: 'Sentadilla Goblet con mancuerna o kettlebell',
     category: 'strength',
     primaryMuscle: 'Cuádriceps',
@@ -532,6 +547,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-barbell-squat',
     slug: 'barbell-back-squat',
+    demoImageUrl: '/exercises/barbell-back-squat.jpg',
     name: 'Sentadilla con barra controlada (al paralelo o al banco)',
     category: 'strength',
     primaryMuscle: 'Cuádriceps y glúteo mayor',
@@ -562,6 +578,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-box-squat',
     slug: 'box-squat-bodyweight',
+    demoImageUrl: '/exercises/box-squat-bodyweight.jpg',
     name: 'Sentadilla controlada al banco (Box Squat)',
     category: 'strength',
     primaryMuscle: 'Cuádriceps y glúteos',
@@ -592,6 +609,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-rdl-barbell',
     slug: 'romanian-deadlift-barbell',
+    demoImageUrl: '/exercises/romanian-deadlift-barbell.jpg',
     name: 'Peso muerto rumano con barra recta',
     category: 'strength',
     primaryMuscle: 'Isquiosurales y glúteo mayor',
@@ -629,6 +647,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-rdl-db',
     slug: 'romanian-deadlift-dumbbell',
+    demoImageUrl: '/exercises/romanian-deadlift-dumbbell.jpg',
     name: 'Peso muerto rumano con mancuernas',
     category: 'strength',
     primaryMuscle: 'Isquiosurales y glúteos',
@@ -659,6 +678,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-glute-bridge',
     slug: 'hip-thrust-glute-bridge',
+    demoImageUrl: '/exercises/hip-thrust-glute-bridge.png',
     name: 'Puente de glúteo / Hip Thrust en banco',
     category: 'strength',
     primaryMuscle: 'Glúteo mayor',
@@ -689,6 +709,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-reverse-lunge',
     slug: 'reverse-lunge-controlled',
+    demoImageUrl: '/exercises/reverse-lunge-controlled.png',
     name: 'Zancada inversa controlada (peso corporal o mancuernas)',
     category: 'strength',
     primaryMuscle: 'Cuádriceps y glúteo medio/mayor',
@@ -719,6 +740,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-ez-curl-superset',
     slug: 'ez-bar-biceps-triceps',
+    demoImageUrl: '/exercises/ez-bar-biceps-triceps.jpg',
     name: 'Curl de bíceps + Extensión de tríceps con barra EZ',
     category: 'strength',
     primaryMuscle: 'Bíceps y tríceps braquial',
@@ -755,6 +777,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-hammer-curl',
     slug: 'dumbbell-hammer-curl',
+    demoImageUrl: '/exercises/dumbbell-hammer-curl.jpg',
     name: 'Curl martillo con mancuernas',
     category: 'strength',
     primaryMuscle: 'Bíceps y braquiorradial',
@@ -784,6 +807,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-dead-bug',
     slug: 'dead-bug',
+    demoImageUrl: '/exercises/dead-bug.jpg',
     name: 'Dead Bug (insecto muerto controlado)',
     category: 'core',
     primaryMuscle: 'Transverso abdominal y recto anterior',
@@ -820,6 +844,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-plank',
     slug: 'front-plank',
+    demoImageUrl: '/exercises/front-plank.jpg',
     name: 'Plancha frontal activa (isométrica)',
     category: 'core',
     primaryMuscle: 'Recto abdominal, transverso y oblicuos',
@@ -853,6 +878,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-crunch-bench',
     slug: 'controlled-crunch',
+    demoImageUrl: '/exercises/controlled-crunch.jpg',
     name: 'Crunch abdominal corto controlado (suelo o banco horizontal)',
     category: 'core',
     primaryMuscle: 'Recto del abdomen',
@@ -892,6 +918,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-ab-wheel',
     slug: 'ab-wheel-rollout',
+    demoImageUrl: '/exercises/ab-wheel-rollout.jpg',
     name: 'Rueda abdominal progresiva (frente a pared / de rodillas)',
     category: 'core',
     primaryMuscle: 'Recto abdominal, transverso y dorsal',
@@ -934,6 +961,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-pallof-band',
     slug: 'pallof-press-band',
+    demoImageUrl: '/exercises/pallof-press-band.jpg',
     name: 'Press Pallof antirotación (banda elástica o polea)',
     category: 'core',
     primaryMuscle: 'Oblicuos internos/externos y transverso',
@@ -966,6 +994,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-bike-z2',
     slug: 'stationary-bike-z2',
+    demoImageUrl: '/exercises/stationary-bike-z2.jpg',
     name: 'Bicicleta estática aeróbica (Zona 2 conversacional)',
     category: 'cardio',
     primaryMuscle: 'Sistema cardiorrespiratorio y tren inferior',
@@ -1003,6 +1032,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-brisk-walk',
     slug: 'brisk-walking-outdoor',
+    demoImageUrl: '/exercises/brisk-walking-outdoor.jpg',
     name: 'Caminata a paso vivo (base aeróbica y preparación articular)',
     category: 'cardio',
     primaryMuscle: 'Sistema cardiovascular, gemelos, sóleo y glúteos',
@@ -1033,6 +1063,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-jump-rope',
     slug: 'jump-rope-intervals',
+    demoImageUrl: '/exercises/jump-rope-intervals.webp',
     name: 'Saltos suaves a la comba por intervalos (solo con tolerancia al impacto)',
     category: 'cardio',
     primaryMuscle: 'Complejo aquileo-plantar (gemelos/sóleo) y sistema cardiovascular',
@@ -1073,6 +1104,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-rower',
     slug: 'rowing-ergometer-steady',
+    demoImageUrl: '/exercises/rowing-ergometer-steady.png',
     name: 'Remo ergómetro aeróbico técnico',
     category: 'cardio',
     primaryMuscle: 'Cadena posterior, cuádriceps y sistema aeróbico',
@@ -1102,6 +1134,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-walk-run',
     slug: 'walk-run-progressive',
+    demoImageUrl: '/exercises/walk-run-progressive.png',
     name: 'Sesión progresiva Caminar-Correr (Ca-Co)',
     category: 'running',
     primaryMuscle: 'Tren inferior y capacidad aeróbica específica de carrera',
@@ -1135,6 +1168,7 @@ export const SYSTEM_EXERCISES: ExerciseItem[] = [
   {
     id: 'ex-mobility-football-recovery',
     slug: 'post-football-mobility-flow',
+    demoImageUrl: '/exercises/post-football-mobility-flow.jpg',
     name: 'Flujo de movilidad y descarga post-fútbol (cadera, tobillo y espalda)',
     category: 'recovery',
     primaryMuscle: 'Flexores de cadera, aductores, isquios y columna torácica',

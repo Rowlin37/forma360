@@ -6,8 +6,6 @@ import {
   BarChart3,
   BookOpen,
   CalendarDays,
-  Cloud,
-  Database,
   Dumbbell,
   Footprints,
   LayoutDashboard,
@@ -49,7 +47,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const {
     user,
     state,
-    isSupabaseCloud,
     activeSection,
     setActiveSection,
     setThemeMode,
@@ -135,28 +132,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           })}
         </nav>
 
-        <div className="p-4 border-t border-slate-200 dark:border-slate-800/80 space-y-3">
-          <button
-            type="button"
-            onClick={() => setActiveSection('profile')}
-            className={`w-full flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium border text-left ${
-              isSupabaseCloud
-                ? 'border-emerald-500/30 bg-emerald-500/10 text-emerald-800 dark:text-emerald-300'
-                : 'border-amber-500/30 bg-amber-500/10 text-amber-800 dark:text-amber-300'
-            }`}
-          >
-            {isSupabaseCloud ? (
-              <Cloud className="w-4 h-4 shrink-0" />
-            ) : (
-              <Database className="w-4 h-4 shrink-0" />
-            )}
-            <span className="truncate">
-              {isSupabaseCloud
-                ? 'Sincronización Supabase activa'
-                : 'Modo Local · Conectar Supabase'}
-            </span>
-          </button>
-
+        <div className="p-4 border-t border-slate-200 dark:border-slate-800/80">
           <div className="flex items-center justify-between gap-2">
             <div className="min-w-0">
               <p className="text-xs font-semibold truncate text-slate-900 dark:text-white">
@@ -277,21 +253,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
       {/* CONTENIDO PRINCIPAL */}
       <main className="flex-1 min-w-0 pb-24 lg:pb-12">
-        {!isSupabaseCloud && (
-          <div className="bg-amber-500/10 border-b border-amber-500/25 px-4 lg:px-8 py-2 text-xs text-amber-950 dark:text-amber-200 flex flex-wrap items-center justify-between gap-2">
-            <span>
-              <strong>Modo Local Activo:</strong> Tus entrenamientos, pesajes y comidas se guardan de forma real en este dispositivo (sin simular conexión en nube).
-            </span>
-            <button
-              type="button"
-              onClick={() => setActiveSection('profile')}
-              className="underline font-semibold hover:text-amber-700 dark:hover:text-amber-100"
-            >
-              Ver cómo activar Supabase Cloud
-            </button>
-          </div>
-        )}
-
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">{children}</div>
       </main>
 

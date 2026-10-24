@@ -135,6 +135,7 @@ export interface EquipmentItem {
 export interface ExerciseItem {
   id: string;
   slug: string;
+  demoImageUrl?: string;
   name: string;
   category: ExerciseCategory;
   primaryMuscle: string;
